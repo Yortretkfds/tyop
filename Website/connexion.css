@@ -1,0 +1,52 @@
+form {
+    background-color: #53566b;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #bdbfc7;
+    margin: 0 auto;
+    width: 50%;
+}
+
+label {
+    color: #151a44;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+input[type=text], input[type=tel] {
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #151a44;
+    border-radius: 4px;
+    font-size: 18px;
+    width: 100%;
+}
+
+
+select {
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #151a44;
+    border-radius: 4px;
+    font-size: 18px;
+    width: 100%;
+    background-color: #ecf0f1;
+    color: #151a44;
+}
+
+input[type=submit] {
+    background-color: #2980b9;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+input[type=submit]:hover {
+    background-color: #1abc9c;
+}

@@ -1,0 +1,40 @@
+header {
+    background-color: #151a44;
+    color: white;
+    padding: 20px;
+    /* ajouter la propriété suivante pour centrer les éléments enfants */
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+
+header nav ul li {
+    float: left;
+}
+
+header nav ul li a {
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+}
+
+header nav ul li a:hover {
+    background-color: #34495e;
+}
+
+body {
+    background-color: #1b3046;
+    margin: 0;
+    padding: 0;
+}

@@ -1,0 +1,212 @@
+form {
+    background-color: #53566b;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #bdbfc7;
+    margin: 20px auto; /* Add a margin to the form */
+    width: 70%;
+  }
+
+label {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+input[type=text], input[type=tel] {
+    background-color: #303245;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    font-size: 18px;
+    height: 100%;
+    outline: 0;
+    padding: 8px 20px 0;
+    width: 100%;
+}
+
+.form-input {
+    background-color: #303245;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    font-size: 18px;
+    height: 100%;
+    outline: 0;
+    padding: 4px 20px 0;
+    width: 100%;
+}
+
+
+
+select {
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #151a44;
+    border-radius: 4px;
+    font-size: 18px;
+    width: 100%;
+    background-color: #ecf0f1;
+    color: #151a44;
+}
+
+input[type=submit] {
+    background-color: #2980b9;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+input[type=submit]:hover {
+    background-color: #1abc9c;
+}
+
+input[type=button]:focus {
+    background-color: #1abc9c;
+}
+
+article {
+    position: relative;
+    width: 50px;
+    height: 30px;
+    margin: 5px;
+    float: left;
+    border: 2px solid #50bcf2;
+    box-sizing: border-box;
+    background-color: #50bcf2;
+}
+article div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 25px;
+    transition: .5s ease;
+  }
+
+  article input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 30px;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  input[type=checkbox]:checked ~ div {
+    background-color: gray;
+  }
+
+  .disabled {
+    color: gray;
+ }
+
+ :root {
+    /* Font Color */
+    --light-theme: #f8f9fa;
+    
+    /* Circle Width */
+    --circle-diameter: 300px;
+
+    /* Font Family */
+    --fonts-style-x: 'neuzeit-grotesk', sans-serif;
+    --fonts-style-y: 'neuzeit-grotesk', sans-serif;
+
+    /* Font Weight */
+    --light: 300;
+    --regular: 400;
+    --bold: 700;
+    --black: 900;
+
+}
+
+
+/* ------------- */
+/* Basic Setting */
+/* ------------- */
+
+html,
+body {
+    background-color: #1c1d25;
+    box-sizing: border-box;
+    font-family: 'neuzeit-grotesk', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1em;
+    line-height: 1.5;
+    color: #ffffffee;
+    scroll-behavior: smooth;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+main {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    min-height: 640px;
+    background-color: var(--light-theme);
+}
+
+::selection {
+    color: #fff;
+    background-color: var(--light-theme);
+}
+
+
+/* ------------- */
+/* Content Style */
+/* ------------- */
+
+.google-map {
+    margin: 20px auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--circle-diameter);
+    height: var(--circle-diameter);
+    overflow: hidden;
+    border-radius: var(--circle-diameter);
+    background-color: #eee;
+    transition: 1000ms;
+    cursor: grab;
+}
+
+.google-map .map-frame {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--light-theme);
+}
+
+.google-map iframe {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: visibleStroke;
+}
+
+
+/* ------------------ */
+/* Interactive Effect */
+/* ------------------ */
+
+.google-map:hover {
+    width: 70vw;
+    height: 70vh;
+    border-radius: 0;
+}
